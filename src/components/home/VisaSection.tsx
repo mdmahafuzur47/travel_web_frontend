@@ -1,15 +1,13 @@
-import React, { ReactElement } from 'react'
-import { ApartmentIcon, BusIcon, CruiseIcon, FlightIcon, GlobeIcon, HotelIcon, VisaIcon } from '../icons'
 import { ITabsData, tabsData } from '@/data/visaData'
 
 
 
 const VisaSection = () => {
   return (
-    <section className='container p-5 shadow-md my-5 rounded-xl'>
-      <div className='flex flex-col items-center gap-6'>
+    <section className='container  my-10 '>
+      <div className='flex flex-col items-center gap-6 p-5  mx-10 shadow-xl rounded-2xl '>
         {/* all tabs here */}
-        <div className='flex gap-2 mt-5 justify-center'>
+        <div className='flex gap-2 justify-center'>
           {
             tabsData.map((tab, index) => {
               return (
@@ -48,7 +46,7 @@ const VisaSection = () => {
 
 const TabBtn = ({ data }: { data: ITabsData }) => {
   return (
-    <div className={`${data?.name === "Visa" && "bg-primaryColor text-white"} border border-primaryColor rounded-md flex items-center gap-1 font-medium w-[130px] px-2 py-1 justify-center`}>
+    <div className={`${data?.name === "Visa" && "bg-primaryColor text-white"} border border-primaryColor rounded-md flex items-center gap-1 font-medium w-[130px] px-2 py-1 justify-center shadow-sm`}>
       {data?.icon}
       <p>{data?.name}</p>
     </div>

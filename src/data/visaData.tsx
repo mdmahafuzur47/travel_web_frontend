@@ -16,12 +16,12 @@ export const tabsData: ITabsData[] = [
       icon: <GlobeIcon />
     },
     {
-      name: "Hotels",
-      icon: <HotelIcon />
-    },
-    {
       name: "Visa",
       icon: <VisaIcon />
+    },
+    {
+      name: "Hotels",
+      icon: <HotelIcon />
     },
     {
       name: "Apartments",
