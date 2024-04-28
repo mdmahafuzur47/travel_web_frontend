@@ -1,9 +1,12 @@
+import HeroSection from "@/components/home/HeroSection";
+import VisaSection from "@/components/home/VisaSection";
 
 
 export default function Home() {
   return (
     <>   
-      <h1>hi</h1>
+      <HeroSection />
+      <VisaSection />
     </>
   );
 }
